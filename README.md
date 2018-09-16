@@ -2,11 +2,9 @@
 
 # DocScan
 
-This is an android project writen in kotlin turns your mobile into a portable scanner, which can be used for scanning handwritten notes and printed documents.
+This is an android project written in kotlin turns your mobile into a portable scanner, which can be used for scanning handwritten notes and printed documents.
 
 It automatically detect the edge of the paper over a contrasting surface.After the page is detected, it compensates any perspective from the image adjusting it to a 90 degree top view and saves it on a folder on the device.
-
-
 <hr>
 
 ## Features
@@ -14,5 +12,20 @@ It automatically detect the edge of the paper over a contrasting surface.After t
 * Scan handwritten or printed documents
 * Detects page frame and corrects perspective automatically
 * Fast and smooth Image Processing on the fly
-* Scans are saved to your device as images or pdf .
+* Scans are saved to your device as images or pdf 
 * Advance image processing to enhance images for greyscale and contrast
+
+# Example
+you can detect paper on desktop like this
+
+## detecting previewing picture
+<img src="https://github.com/Patil-Kranti/DocScan/app/src/main/res/beforeCrop.jpg" width="220">
+
+## Performing crop operation on picture
+<img src="https://github.com/Patil-Kranti/DocScan/app/src/main/res/afterCrop.jpg" width="220">
+
+
+# Addition
+code is written in pure kotlin, hope this project will be helpful to you.
+previous version only work well on device of 1080 * 1920 resolution ratio, this bug fixed in this version.
+
