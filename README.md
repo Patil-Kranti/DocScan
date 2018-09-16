@@ -74,7 +74,7 @@ $ export ANDROID_HOME=~/android-sdk-linux
 $ ./gradlew assembleRelease
 ```
 
-Motiavtion
+Motivation
 -------
 It all started with inception of idea in our Prof.Athwale Sir's mind to make available a Open Source Scanner without of watermark,paid version to contribute towards Open source to  promotes the development of powerful software tools which we are increasingly reliant on .
 
@@ -110,6 +110,7 @@ As an open source application, contribution are always welcome. Everyone that su
 
 This application wouldn't be possible without the great material produced by the community. I would like to give special thanks to the authors of essencial parts I've got on the internet and used in the code:
 
+* [Open Source Computer Vision Library](https://github.com/opencv/opencv)
 * [Android-er / GridView code sample](http://android-er.blogspot.com.br/2012/07/gridview-loading-photos-from-sd-card.html)
 * [Adrian Rosebrock from pyimagesearch.com for the excellent tutorial on how to handle the images](http://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/)
 
@@ -121,5 +122,3 @@ License
 Apache License 2.0
 
 A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
-
-=
