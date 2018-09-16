@@ -76,7 +76,7 @@ $ ./gradlew assembleRelease
 
 Motivation
 -------
-It all started with inception of idea in our Prof.Athwale Sir's mind to make available a Open Source Scanner without of watermark,paid version to contribute towards Open source to  promotes the development of powerful software tools which we are increasingly reliant on .
+It all started with inception of idea in our Prof. Athwale Sir's mind to make available a Open Source Scanner without of watermark,paid version to contribute towards Open source to  promotes the development of powerful software tools which we are increasingly reliant on .
 
 Roadmap
 -------
