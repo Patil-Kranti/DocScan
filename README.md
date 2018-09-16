@@ -15,12 +15,20 @@ It automatically detect the edge of the paper over a contrasting surface.After t
 * Scans are saved to your device as images or pdf 
 * Advance image processing to enhance images for greyscale and contrast
 
+
 # Example
 you can detect paper on desktop like this
 
-
 ## detecting previewing picture
-![Test Image 1](https://raw.githubusercontent.com/Patil-Kranti/DocScan/master/app/src/main/res/values/afterCrop.png)
+<img src="https://raw.githubusercontent.com/Patil-Kranti/DocScan/master/app/src/main/res/values/beforeCrop.jpg" width="220">
+
+## crop picture
+<img src="https://raw.githubusercontent.com/Patil-Kranti/DocScan/master/app/src/main/res/values/afterCrop.png" width="220">
+
+## enhance picture
+<img src="https://raw.githubusercontent.com/Patil-Kranti/DocScan/master/app/src/main/res/values/enhance.png" width="220">
+
+
 
 
 
