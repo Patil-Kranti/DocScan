@@ -20,7 +20,7 @@ you can detect paper on desktop like this
 
 
 ## detecting previewing picture
-![Test Image 1](https://github.com/Patil-Kranti/DocScan/app/src/main/res/afterCrop.png)
+![Test Image 1](https://raw.githubusercontent.com/Patil-Kranti/DocScan/master/app/src/main/res/values/afterCrop.png)
 
 
 
