@@ -36,7 +36,7 @@ Requirements
 
 Because of the version of OpenCV that is used in the project it needs to run on Android 5.0 (lollipop) or newer.
 
-In order to capture and manipulate images DocScan depends on  the OpenCV Library.
+In order to capture and manipulate images DocScan depends on having the OpenCV Manager application installed
 
 
 How to Install
@@ -89,10 +89,10 @@ Contributing
 ------------
 
 If you have any idea, feel free to fork it and submit your changes back to us at following address
-*Kranti Patil <Krantipatil20@gmail.com>
-*Rohan Pawar <rohapawar22@gmail.com>
-*Utkarsha Shinkar <utkarshashinkar@gmail.com>
-*Yash Lunawat <lunawatyash279@gmail.com>
+Kranti Patil <Krantipatil20@gmail.com>
+Rohan Pawar <rohapawar22@gmail.com>
+Utkarsha Shinkar <utkarshashinkar@gmail.com>
+Yash Lunawat <lunawatyash279@gmail.com>
 
 Thanks
 ------
