@@ -74,29 +74,25 @@ $ export ANDROID_HOME=~/android-sdk-linux
 $ ./gradlew assembleRelease
 ```
 
-History
+Motiavtion
 -------
-
-I've started this app on a brazilian holyday "extended weekend" based on the fact that I was unable to find any open source application that does this job. I was mainly inspired on the RocketBook Wave closed source application.
-
-I really do not know if I will extend more the application, but I am writing bellow some objectives to make it better.
+It all started with inception of idea in our Prof.Athwale Sir's mind to make available a Open Source Scanner without of watermark,paid version to contribute towards Open source to  promotes the development of powerful software tools which we are increasingly reliant on .
 
 Roadmap
 -------
 
-* enhance the image gallery of scanned documents
+* add cloud support
 * register a share action in order to obtain documents already pictured through standard camera apps
-* implement automatic action based on the RocketBook Wave marking of the page
 
 
 Contributing
 ------------
 
 If you have any idea, feel free to fork it and submit your changes back to us at following address
-Kranti Patil <Krantipatil20@gmail.com>
-Rohan Pawar <rohapawar22@gmail.com>
-Utkarsha Shinkar <utkarshashinkar@gmail.com>
-Yash Lunawat <lunawatyash279@gmail.com>
+*Kranti Patil <Krantipatil20@gmail.com>
+*Rohan Pawar <rohapawar22@gmail.com>
+*Utkarsha Shinkar <utkarshashinkar@gmail.com>
+*Yash Lunawat <lunawatyash279@gmail.com>
 
 Thanks
 ------
@@ -108,9 +104,7 @@ As an open source application, contribution are always welcome. Everyone that su
 * Kranti Patil
 * Rohan Pawar
 * Utkarsha Shinkar
-* 
-
- Their help is appreciated as well.
+* Yash Lunawat
 
 ### External code
 
@@ -128,3 +122,4 @@ Apache License 2.0
 
 A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
+=
