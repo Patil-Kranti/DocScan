@@ -19,7 +19,7 @@ It automatically detect the edge of the paper over a contrasting surface.After t
 you can detect paper on desktop like this
 
 ## detecting previewing picture
-<img src="https://github.com/Patil-Kranti/DocScan/app/src/main/res/beforeCrop.jpg" width="220">
+<img src="https://github.com/Patil-Kranti/DocScan/app/src/main/res/values/beforeCrop.jpg" width="220">
 
 ## Performing crop operation on picture
 <img src="https://github.com/Patil-Kranti/DocScan/app/src/main/res/afterCrop.jpg" width="220">
