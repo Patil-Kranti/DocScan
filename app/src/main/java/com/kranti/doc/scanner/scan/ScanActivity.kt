@@ -1,12 +1,14 @@
 package com.kranti.doc.scanner.scan
 
 import android.content.pm.PackageManager
+import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.util.Log
 import android.view.Display
 import android.view.SurfaceView
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 import com.kranti.doc.scanner.R
 import com.kranti.doc.scanner.base.BaseActivity
@@ -18,8 +20,11 @@ class ScanActivity : BaseActivity(), IScanView.Proxy {
     private val REQUEST_CAMERA_PERMISSION = 0
     private val EXIT_TIME = 2000
 
+
     private lateinit var mPresenter: ScanPresenter
     private var latestBackPressTime: Long = 0
+
+
 
 
     override fun provideContentViewId(): Int = R.layout.activity_scan
@@ -93,23 +98,21 @@ class ScanActivity : BaseActivity(), IScanView.Proxy {
         startActivity(intent)
         Log.d("IMAGE", "IMAGE PREVIEW ACTIVITY")
     }
+    //val flashon = findViewById<ImageView>(R.id.flashOn)
+   // val flashoff = findViewById<ImageView>(R.id.flashOff)
+fun flashOn(view: View)
+{
+  flashOn.visibility= View.INVISIBLE
+    flashOff.visibility= View.VISIBLE
+    mPresenter.flashOn()
 
-    /*fun flashOn(view: View){
+}
+    fun flashOff(view: View)
+    {
+        flashOff.visibility= View.INVISIBLE
+        flashOn.visibility= View.VISIBLE
+        mPresenter.flashOff()
 
-//        val intent = Intent(this,ImgPreview::class.java)
-//        startActivity(intent)
-        val flashOn = FlashOn()
-
-        flashOn.getCamera()
-        flashOn.turnOnFlash()
-        Toast.makeText(this,"this is the Flash On button you clicked",Toast.LENGTH_LONG).show()
     }
-    fun flashOff(view: View){
-        //val intent = Intent(this,ImgPreview::class.java)
-        startActivity(intent)
-        Toast.makeText(this,"this is the Flash Off button you clicked",Toast.LENGTH_LONG).show()
-    }
 
-
-*/
 }

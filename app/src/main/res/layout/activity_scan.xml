@@ -18,7 +18,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
         android:background="@drawable/bottom_banner_bg"
         android:padding="16dp">
 
@@ -57,7 +60,7 @@
             android:background="?android:attr/selectableItemBackground"
             android:onClick="flashOff"
             android:src="@drawable/ic_flash_off_black_24dp"
-            android:visibility="gone" />
+            android:visibility="invisible" />
 
     </RelativeLayout>
 

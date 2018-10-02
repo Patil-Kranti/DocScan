@@ -25,4 +25,5 @@ abstract class BaseActivity : AppCompatActivity() {
     abstract fun initPresenter()
 
     abstract fun prepare()
+
 }

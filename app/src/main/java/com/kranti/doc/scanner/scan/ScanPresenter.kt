@@ -92,8 +92,8 @@ class ScanPresenter constructor(private val context: Context, private val iView:
             return
         }
 
-
         val param = mCamera?.parameters
+
         val size = getMaxResolution()
         param?.setPreviewSize(size?.width ?: 1920, size?.height ?: 1080)
         val display = iView.getDisplay()
@@ -222,8 +222,25 @@ class ScanPresenter constructor(private val context: Context, private val iView:
                 }
 
     }
+    fun flashOn()
+    { val param = mCamera?.parameters
+        Log.d("flash", "flash actiiviyy ON")
+        param?.flashMode = Camera.Parameters.FLASH_MODE_ON
+        mCamera?.parameters = param
+
+    }
+    fun flashOff()
+    { val param = mCamera?.parameters
+        Log.d("flash", "flash actiiviyy OFF")
+        param?.flashMode = Camera.Parameters.FLASH_MODE_OFF
+        mCamera?.parameters = param
+
+    }
 
     private fun getMaxResolution(): Camera.Size? = mCamera?.parameters?.supportedPreviewSizes?.maxBy { it.width }
+
+
+
 
 
 }
