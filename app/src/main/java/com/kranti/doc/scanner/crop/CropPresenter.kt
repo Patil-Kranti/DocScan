@@ -88,7 +88,7 @@ class CropPresenter(val context: Context, private val iCropView: ICropView.Proxy
 
     fun save() {
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(context, "please grant write file permission and trya gain", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "please grant write file permission and try again", Toast.LENGTH_SHORT).show()
         } else {
             val dir = File(Environment.getExternalStorageDirectory(), IMAGES_DIR)
             if (!dir.exists()) {

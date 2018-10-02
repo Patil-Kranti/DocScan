@@ -29,6 +29,36 @@
             android:layout_centerInParent="true"
             android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/ic_camera_enhance_light_blue_500_24dp" />
+
+        <ImageView
+            android:id="@+id/gal"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="imagePreview"
+            android:src="@drawable/ic_menu_gallery" />
+
+        <ImageView
+            android:id="@+id/flashOn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="flashOn"
+            android:src="@drawable/ic_flash_on_black_24dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/flashOff"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="flashOff"
+            android:src="@drawable/ic_flash_on_black_24dp"
+            android:visibility="gone" />
+
     </RelativeLayout>
 
 </RelativeLayout>

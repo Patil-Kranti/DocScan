@@ -1,9 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.kranti.doc.scanner">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.Camera" />
 
     <application
         android:allowBackup="true"
@@ -12,20 +15,20 @@
         android:roundIcon="@drawable/ic_donut_small_light_blue_500_24dp"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
-
         <activity
-            android:name="com.kranti.doc.scanner.scan.ScanActivity"
+            android:name=".scan.ScanActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.kranti.doc.scanner.crop.CropActivity"
+            android:name=".crop.CropActivity"
             android:label="@string/crop"
             android:launchMode="singleTask"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

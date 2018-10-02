@@ -6,15 +6,15 @@ import android.support.v4.content.ContextCompat
 import android.util.Log
 import android.view.Display
 import android.view.SurfaceView
+import android.view.View
+import android.widget.Toast
 import com.kranti.doc.scanner.R
 import com.kranti.doc.scanner.base.BaseActivity
 import com.kranti.doc.scanner.view.PaperRectangle
-
 import kotlinx.android.synthetic.main.activity_scan.*
 import org.opencv.android.OpenCVLoader
 
 class ScanActivity : BaseActivity(), IScanView.Proxy {
-
     private val REQUEST_CAMERA_PERMISSION = 0
     private val EXIT_TIME = 2000
 
@@ -87,4 +87,29 @@ class ScanActivity : BaseActivity(), IScanView.Proxy {
     override fun getSurfaceView(): SurfaceView = surface
 
     override fun getPaperRect(): PaperRectangle = paper_rect
+    fun imagePreview(view: View) {
+        Toast.makeText(this, "this is the camera preview button you clicked", Toast.LENGTH_LONG).show()
+        //val intent = Intent(this,ImgPreview::class.java)
+        startActivity(intent)
+        Log.d("IMAGE", "IMAGE PREVIEW ACTIVITY")
+    }
+
+    /*fun flashOn(view: View){
+
+//        val intent = Intent(this,ImgPreview::class.java)
+//        startActivity(intent)
+        val flashOn = FlashOn()
+
+        flashOn.getCamera()
+        flashOn.turnOnFlash()
+        Toast.makeText(this,"this is the Flash On button you clicked",Toast.LENGTH_LONG).show()
+    }
+    fun flashOff(view: View){
+        //val intent = Intent(this,ImgPreview::class.java)
+        startActivity(intent)
+        Toast.makeText(this,"this is the Flash Off button you clicked",Toast.LENGTH_LONG).show()
+    }
+
+
+*/
 }

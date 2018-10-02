@@ -35,8 +35,10 @@ import java.util.concurrent.Executors
 
 class ScanPresenter constructor(private val context: Context, private val iView: IScanView.Proxy)
     : SurfaceHolder.Callback, Camera.PictureCallback, Camera.PreviewCallback {
+
+
     private val TAG: String = "ScanPresenter"
-    private var mCamera: Camera? = null
+    public var mCamera: Camera? = null
     private val mSurfaceHolder: SurfaceHolder = iView.getSurfaceView().holder
     private val executor: ExecutorService
     private val proxySchedule: Scheduler
