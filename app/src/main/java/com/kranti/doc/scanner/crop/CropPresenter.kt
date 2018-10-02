@@ -2,8 +2,10 @@ package com.kranti.doc.scanner.crop
 
 import android.Manifest
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.net.Uri
 import android.os.Environment
 import android.os.SystemClock
 import android.support.v4.app.ActivityCompat
@@ -115,6 +117,17 @@ class CropPresenter(val context: Context, private val iCropView: ICropView.Proxy
                     Toast.makeText(context, "picture saved, path: ${file.absolutePath}", Toast.LENGTH_SHORT).show()
                 }
             }
+        }
+        galleryAddPic()
+    }
+
+    fun galleryAddPic() {
+        val dir = File(Environment.getExternalStorageDirectory(), IMAGES_DIR)
+        Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE).also { mediaScanIntent ->
+            // val f = File(dir)
+            mediaScanIntent.data = Uri.fromFile(dir)
+            context.sendBroadcast(mediaScanIntent)
+            Toast.makeText(context, "this is the Gallery add method", Toast.LENGTH_LONG).show()
         }
     }
 }
