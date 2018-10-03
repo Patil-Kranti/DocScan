@@ -1,14 +1,15 @@
 package com.kranti.doc.scanner.scan
 
+import android.content.Intent
 import android.content.pm.PackageManager
-import android.os.Bundle
+import android.net.Uri
+import android.os.Environment
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.util.Log
 import android.view.Display
 import android.view.SurfaceView
 import android.view.View
-import android.widget.ImageView
 import android.widget.Toast
 import com.kranti.doc.scanner.R
 import com.kranti.doc.scanner.base.BaseActivity
@@ -20,7 +21,7 @@ class ScanActivity : BaseActivity(), IScanView.Proxy {
     private val REQUEST_CAMERA_PERMISSION = 0
     private val EXIT_TIME = 2000
 
-
+    private val RESULT_LOAD_IMAGE = 1
     private lateinit var mPresenter: ScanPresenter
     private var latestBackPressTime: Long = 0
 
@@ -94,13 +95,16 @@ class ScanActivity : BaseActivity(), IScanView.Proxy {
     override fun getPaperRect(): PaperRectangle = paper_rect
     fun imagePreview(view: View) {
         Toast.makeText(this, "this is the camera preview button you clicked", Toast.LENGTH_LONG).show()
-        //val intent = Intent(this,ImgPreview::class.java)
-        startActivity(intent)
         Log.d("IMAGE", "IMAGE PREVIEW ACTIVITY")
+        val intent = Intent(Intent.ACTION_GET_CONTENT)
+        val uri = Uri.parse(Environment.getExternalStorageDirectory().path + "/smart_scanner/")
+        intent.setDataAndType(uri, "*/*")
+        startActivity(Intent.createChooser(intent, "Open folder"))
+
     }
-    //val flashon = findViewById<ImageView>(R.id.flashOn)
-   // val flashoff = findViewById<ImageView>(R.id.flashOff)
-fun flashOn(view: View)
+
+
+    fun flashOn(view: View)
 {
   flashOn.visibility= View.INVISIBLE
     flashOff.visibility= View.VISIBLE
